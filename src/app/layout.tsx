@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import BackToTop from "@/components/BackToTop";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -161,7 +162,12 @@ export default function RootLayout({
                   name: "Dholas",
                 },
               ],
-              sameAs: ["https://www.facebook.com/share/1AnqEc5BRA/"],
+              sameAs: [
+                "https://www.facebook.com/share/1AnqEc5BRA/",
+                "https://www.instagram.com/shahpropertiesrealestate",
+                "https://www.youtube.com/@shahproperties",
+                "https://www.linkedin.com/company/shahproperties",
+              ],
               founder: {
                 "@type": "Person",
                 name: "Roshan Singh Shah",
@@ -271,6 +277,7 @@ export default function RootLayout({
             <Footer />
           </div>
           <BackToTop />
+          <WhatsAppButton floating={true} />
         </ErrorBoundary>
       </body>
     </html>

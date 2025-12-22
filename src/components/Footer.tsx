@@ -119,6 +119,15 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/blog"
+                  className="text-gray-300 md:hover:text-white flex items-center"
+                >
+                  <FaArrowRight className="mr-2 text-sm" />
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/contact"
                   className="text-gray-300 md:hover:text-white flex items-center"
                 >

@@ -11,6 +11,7 @@ import {
   FaTools,
   FaPhone,
   FaInfoCircle,
+  FaNewspaper,
 } from "react-icons/fa";
 
 export default function Navbar() {
@@ -82,6 +83,12 @@ export default function Navbar() {
               About
             </Link>
             <Link
+              href="/blog"
+              className="font-medium text-gray-700 md:hover:text-blue-900 transition-colors duration-200"
+            >
+              Blog
+            </Link>
+            <Link
               href="/tools"
               className="font-medium text-gray-700 md:hover:text-blue-900 transition-colors duration-200"
             >
@@ -139,6 +146,14 @@ export default function Navbar() {
           >
             <FaInfoCircle className="mr-3 text-blue-900" />
             About
+          </Link>
+          <Link
+            href="/blog"
+            className="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-blue-900 rounded-lg transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <FaNewspaper className="mr-3 text-blue-900" />
+            Blog
           </Link>
           <Link
             href="/tools"
